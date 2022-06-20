@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFF"
+    tools:context=".loginActivity"
+    tools:ignore="ExtraText">
+
+   <LinearLayout
+       android:layout_width="386dp"
+       android:layout_height="209dp"
+       android:layout_centerHorizontal="true"
+       android:layout_marginTop="12dp"
+       android:layout_marginBottom="15dp"
+       android:gravity="center"
+       android:orientation="horizontal">
+
+       <ImageView
+           android:layout_width="250dp"
+           android:layout_height="80dp"
+           android:layout_marginTop="40dp"
+           android:src="@drawable/logologin"
+           />
+       <ImageView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="40dp"
+           android:fontfamily="@font/comforta bold"
+           android:gravity="center"
+           android:text="login"
+           android:textcolor="#125290"
+           android:textsize="26dp"
+           android:textstyle="bold"/>
+   </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/form"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="230dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/usernamelogin"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:hint="Masukan nama pengguna : "
+                android:inputType="text"
+                android:maxLines="1"
+                android:padding="16dp"
+                android:singleLine="true"
+                android:textColor="@color/purple_700"
+                android:textColorHint="@color/purple_700"
+                android:textSize="14dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/id_password"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:hint="Masukan password : "
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:padding="16dp"
+                android:singleLine="true"
+                android:textColor="@color/purple_700"
+                android:textColorHint="@color/purple_700"
+                android:textSize="14dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btn_login"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:padding="100dp"
+                android:textColor="#E9F0E6"
+                android:textSize="12dp"
+                android:background="@drawable/ButtonLogin"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
